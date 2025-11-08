@@ -205,6 +205,9 @@ async def to_code(config):
 
 FILTER_SOURCE_FILES = filter_source_files_from_platform(
     {
+        "remote_receiver_rp2040.cpp": {
+            PlatformFramework.RP2040_ARDUINO,
+        },
         "remote_receiver_esp32.cpp": {
             PlatformFramework.ESP32_ARDUINO,
             PlatformFramework.ESP32_IDF,
